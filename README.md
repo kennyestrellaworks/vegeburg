@@ -4,6 +4,8 @@
 
 ![](readme-preview.jpg)
 
+[Live Demo](https://vegeburg.netlify.app/)
+
 ### Technologies
 
 <img width="22px" src="react-original.svg"> <img width="22px" src="javascript-original.svg"> <img width="22px" src="sass-original.svg"> <img width="22px" src="html5-plain.svg">
@@ -16,7 +18,7 @@
 
 - **Home** Most of the content came from my data/data.js then the **Testimonial** section was the challenging part. I made the images clickable then an **Image Modal** will handle the previous and next view of the image.
 
-- **Blog** This is the most challenging part of this project, I enjoyed doing research about useSearchParams, useRef, useContext and many more.
+- **Blog** This is the most challenging part of this project, the data to populate blog posts can be seen at **data/blogPosts.js**. There's a property, **postHtml** where the value is a string containing HTML markup, expressed as a JavaScript template literal, so that when I'm using this property, I will load the markup, it's like imitating a CMS content. I enjoyed doing research about useSearchParams, useRef, useContext and many more.
 
 ## Features
 
@@ -27,18 +29,23 @@
 
 ### Installation
 
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/](https://github.com/)[YourUsername]/VegeBurg.git
-    ```
-2.  Navigate into the project directory:
-    ```bash
-    cd VegeBurg
-    ```
-3.  Install the dependencies:
-    ```bash
-    npm install
-    ```
+Clone the repository:
+
+```bash
+git clone https://github.com/kennyestrellaworks/vegeburg.git
+```
+
+Navigate into the project directory:
+
+```bash
+cd vegeburg
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
 
 ### Running the Project
 
