@@ -1,0 +1,56 @@
+@use "../utilities/color";
+@use "../utilities/media-query";
+
+.heading__primary,
+.heading__secondary,
+.heading__tertiary {
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+  line-height: 1.05;
+}
+.heading__primary {
+  font-size: 5.2rem;
+  color: color.$color-group-3a;
+  @include media-query.mediaQuery(viewport1340) {
+    font-size: 4.4rem;
+  }
+}
+.heading__secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  color: color.$color-group-1a;
+  @include media-query.mediaQuery(viewport1200) {
+    font-size: 3.6rem;
+  }
+  @include media-query.mediaQuery(viewport710) {
+    margin-bottom: 4.8rem;
+  }
+}
+.heading__tertiary {
+  font-size: 3rem;
+  line-height: 1.6;
+  margin-bottom: 3.2rem;
+  color: color.$color-group-1a;
+  @include media-query.mediaQuery(viewport1200) {
+    font-size: 2.4rem;
+  }
+}
+
+.sub-heading__primary {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: color.$color-group-3c;
+}
+.sub-heading__secondary {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: color.$color-group-1b;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}

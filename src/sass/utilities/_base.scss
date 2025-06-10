@@ -1,0 +1,128 @@
+@use "media-query";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%; // 1rem
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  // background-color: blue;
+  @include media-query.mediaQuery(viewport1200) {
+    font-size: 56.25%;
+  }
+  @include media-query.mediaQuery(viewport950) {
+    font-size: 50%;
+  }
+}
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  // background-color: gray;
+  // @include media-query.mediaQuery(minviewport1920) {
+  //   margin: 2rem 0;
+  // }
+}
+
+.wrapper {
+  width: 100%;
+
+  position: relative;
+  &__1920 {
+    max-width: 192rem;
+    margin: 0 auto;
+    // background-color: tan;
+    position: relative;
+    @include media-query.mediaQuery(viewport1920) {
+      width: 100%;
+    }
+    &--content {
+      max-width: 130rem;
+      margin: 0 auto;
+      // background-color: peru;
+      position: relative;
+      padding: 0 4rem;
+      @include media-query.mediaQuery(viewport1300) {
+        width: 100%;
+      }
+      // @include media-query.mediaQuery(viewport1200) {
+      //   padding: 0 6rem;
+      // }
+      // @include media-query.mediaQuery(viewport1000) {
+      //   padding: 0 5rem;
+      // }
+      // @include media-query.mediaQuery(viewport980) {
+      //   padding: 0 4rem;
+      // }
+      // @include media-query.mediaQuery(viewport400) {
+      //   padding: 0 2rem;
+      // }
+    }
+  }
+}
+
+.absolute {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  padding: 1.2rem;
+  z-index: 999;
+}
+
+.absolute__1 {
+  background-color: purple;
+}
+.absolute__2 {
+  background-color: orangered;
+}
+.absolute__3 {
+  background-color: green;
+}
+
+.fixed {
+  position: fixed;
+  width: 192rem;
+  color: #fff;
+  z-index: 999;
+  display: flex;
+  //   justify-content: right;
+  //   background-color: blue;
+  @include media-query.mediaQuery(viewport1920) {
+    width: 100%;
+  }
+  &__content {
+    width: 100%;
+  }
+}
+
+.boxed {
+  display: flex;
+  width: 100%;
+
+  &__row {
+    width: 100%;
+    flex-direction: row;
+    border: 2px solid red;
+  }
+  &__column {
+    height: 100%;
+    flex-direction: column;
+    border: 2px solid red;
+  }
+}
+
+.hide-element {
+  display: none;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}

@@ -1,0 +1,196 @@
+@use "../utilities/color";
+@use "../utilities/media-query";
+
+.section-hero {
+  position: relative;
+  background-color: color.$color-group-1d;
+  z-index: 100;
+  &__container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9.6rem;
+    height: 100vh;
+    position: relative;
+    @include media-query.mediaQuery(viewport1350) {
+      max-width: 120rem;
+      gap: 6.6rem;
+    }
+
+    @include media-query.mediaQuery(viewport1200) {
+      gap: 4.8rem;
+    }
+    @include media-query.mediaQuery(viewport1140) {
+      gap: 4.6rem;
+    }
+    @include media-query.mediaQuery(viewport1030) {
+      flex-direction: column;
+      height: 100%;
+      padding: 15rem 0 0 0;
+    }
+  }
+  &__two-buttons {
+    display: flex;
+    // border: 2px solid red;
+    width: 100%;
+    align-items: center;
+    @include media-query.mediaQuery(viewport850) {
+      justify-content: center;
+    }
+    &-item {
+      display: flex;
+      // border: 2px solid blue;
+      @include media-query.mediaQuery(viewport380) {
+        flex-direction: column;
+      }
+    }
+    // & .btn__full,
+    // & .btn__outline {
+
+    // }
+    & .btn__full {
+      margin-right: 1.4rem;
+      @include media-query.mediaQuery(viewport380) {
+        margin-bottom: 1.4rem;
+      }
+    }
+    // & .btn__outline {
+
+    // }
+  }
+  &__box-one {
+    position: relative;
+    // border: 2px solid blue;
+    width: 36%;
+    &-wrap {
+      position: relative;
+      // border: 2px solid green;
+      @include media-query.mediaQuery(viewport1030) {
+        width: 78%;
+        margin: 0 auto;
+      }
+      @include media-query.mediaQuery(viewport950) {
+        width: 76%;
+      }
+      @include media-query.mediaQuery(viewport680) {
+        width: 100%;
+      }
+    }
+    @include media-query.mediaQuery(viewport1030) {
+      width: 100%;
+    }
+  }
+  &__box-two {
+    position: relative;
+    // border: 2px solid violet;
+    width: 50%;
+    @include media-query.mediaQuery(viewport1030) {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      height: 68rem;
+    }
+    @include media-query.mediaQuery(viewport950) {
+      height: 62rem;
+    }
+    @include media-query.mediaQuery(viewport900) {
+      height: 60rem;
+    }
+    @include media-query.mediaQuery(viewport890) {
+      height: 58rem;
+    }
+    @include media-query.mediaQuery(viewport880) {
+      height: 56rem;
+    }
+    @include media-query.mediaQuery(viewport810) {
+      height: 52rem;
+    }
+    @include media-query.mediaQuery(viewport760) {
+      height: 48rem;
+    }
+    @include media-query.mediaQuery(viewport730) {
+      height: 46rem;
+    }
+    @include media-query.mediaQuery(viewport680) {
+      height: 58rem;
+    }
+    @include media-query.mediaQuery(viewport680) {
+      height: 56rem;
+    }
+    @include media-query.mediaQuery(viewport650) {
+      height: 54rem;
+    }
+    @include media-query.mediaQuery(viewport630) {
+      height: 52rem;
+    }
+    @include media-query.mediaQuery(viewport610) {
+      height: 50rem;
+    }
+    @include media-query.mediaQuery(viewport580) {
+      height: 47rem;
+    }
+    @include media-query.mediaQuery(viewport550) {
+      height: 45rem;
+    }
+    @include media-query.mediaQuery(viewport530) {
+      height: 43rem;
+    }
+    @include media-query.mediaQuery(viewport500) {
+      height: 40rem;
+    }
+  }
+
+  &__delivered-meals {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 3rem;
+    @include media-query.mediaQuery(viewport1030) {
+      display: flex;
+      justify-content: center;
+    }
+    @include media-query.mediaQuery(viewport850) {
+      flex-direction: column;
+      margin-top: 5rem;
+    }
+    &-text {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    &-text-highlight {
+      color: color.$color-group-1b;
+      font-weight: 700;
+    }
+  }
+  &__delivered-meals-cirles {
+    display: flex;
+  }
+  &__hero-image {
+    position: relative;
+    height: 100vh;
+    @include media-query.mediaQuery(viewport1030) {
+      height: 100%;
+    }
+  }
+
+  &__heading {
+    @include media-query.mediaQuery(viewport1030) {
+      text-align: center;
+    }
+  }
+  &__description {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    line-height: 1.6;
+    @include media-query.mediaQuery(viewport1030) {
+      text-align: center;
+    }
+  }
+  &__two-buttons {
+    @include media-query.mediaQuery(viewport1030) {
+      justify-content: center;
+    }
+  }
+}

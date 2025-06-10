@@ -1,0 +1,93 @@
+@use "../utilities/media-query";
+@use "../utilities/variables";
+@use "../utilities/color";
+
+.section-featured {
+  //   padding: 4.8rem 0 3.2rem 0;
+  background-color: color.$color-white;
+  padding-top: 8rem;
+  &__container {
+    @include media-query.mediaQuery(viewport1340) {
+      max-width: 120rem;
+    }
+  }
+  &__logo {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__logo-image {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%;
+    transition: variables.$transition-all-slower;
+    @include media-query.mediaQuery(viewport550) {
+      height: 2.2rem;
+    }
+    &:hover {
+      opacity: 100%;
+      filter: none;
+    }
+  }
+}
+
+.section-featured-two {
+  background-color: color.$color-white;
+  width: 100%;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    padding: 10rem 0;
+    @include media-query.mediaQuery(viewport880) {
+      flex-direction: column;
+      gap: 10rem;
+    }
+  }
+  &__right-image {
+    width: 100%;
+    @include media-query.mediaQuery(viewport880) {
+      justify-content: center;
+      width: 88%;
+    }
+  }
+  &__left,
+  &__right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    @include media-query.mediaQuery(viewport880) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__item {
+    // border: 2px solid olive;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    height: 7.2rem;
+    width: 7.2rem;
+    background-color: color.$color-group-1d;
+    color: color.$color-group-1b;
+    margin-bottom: 3.2rem;
+    padding: 1.6rem;
+    border-radius: 100%;
+
+    & svg {
+      width: 3.4rem;
+      color: color.$color-group-1b;
+      fill: color.$color-group-1b;
+    }
+  }
+  &__title {
+    font-size: 2.4rem;
+    color: color.$color-group-3a;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+  }
+  &__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+}

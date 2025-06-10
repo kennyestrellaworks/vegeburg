@@ -1,0 +1,117 @@
+@use "../utilities/media-query";
+@use "../utilities/color";
+
+.section-how-to {
+  background-color: color.$color-white;
+  position: relative;
+  padding: 9.6rem 0;
+  &__container {
+    @include media-query.mediaQuery(viewport1350) {
+      max-width: 120rem;
+    }
+  }
+  &__step-number {
+    font-size: 6.6rem;
+    font-weight: 600;
+    color: color.$color-group-1e;
+    margin-bottom: 1.2rem;
+    background: color.$color-group-1b;
+    display: inline-block;
+    border-radius: 100%;
+    padding: 2rem;
+    margin-left: 2rem;
+    // border: 2px solid red;
+    @include media-query.mediaQuery(viewport950) {
+      font-size: 7.4rem;
+    }
+    @include media-query.mediaQuery(viewport660) {
+      font-size: 5.4rem;
+    }
+    @include media-query.mediaQuery(viewport500) {
+      font-size: 4.4rem;
+    }
+  }
+  &__details {
+    background: color.$color-group-1e;
+    padding: 5rem 2rem 2rem 2rem;
+    margin-top: -46px;
+    border-radius: 2rem;
+    @include media-query.mediaQuery(viewport1070) {
+      margin-top: -38px;
+    }
+  }
+  &__step-heading {
+    // border: 2px solid blue;
+  }
+  &__step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    // border: 2px solid orange;
+  }
+  &__items {
+    margin-top: 7.6rem;
+  }
+  &__step-image {
+    position: relative;
+    // border: 2px solid yellowgreen;
+    &:nth-child(2) {
+      @include media-query.mediaQuery(viewport550) {
+        grid-row: 1;
+      }
+    }
+    &:nth-child(6) {
+      @include media-query.mediaQuery(viewport550) {
+        grid-row: 5;
+      }
+    }
+  }
+  &__step-image-box {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border: 2px solid violet;
+    @include media-query.mediaQuery(viewport860) {
+      width: 100%;
+    }
+    @include media-query.mediaQuery(viewport550) {
+      transform: translateY(0);
+    }
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include media-query.mediaQuery(viewport860) {
+        top: 32%;
+      }
+      @include media-query.mediaQuery(viewport550) {
+        display: none;
+      }
+    }
+    &::before {
+      width: 60%;
+      padding-bottom: 60%;
+      background-color: color.$color-group-2e;
+      z-index: 10;
+    }
+    &::after {
+      width: 45%;
+      padding-bottom: 45%;
+      background-color: color.$color-group-2d;
+      z-index: 20;
+    }
+  }
+  &__step-image-item {
+    width: 48%;
+    z-index: 50;
+    @include media-query.mediaQuery(viewport860) {
+      width: 72%;
+    }
+  }
+}

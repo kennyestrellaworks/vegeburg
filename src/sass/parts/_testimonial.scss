@@ -1,0 +1,121 @@
+@use "../utilities/media-query";
+@use "../utilities/color";
+@use "../utilities/variables";
+
+.section-testimonials {
+  background-color: #fdf2e9;
+  &__container {
+    position: relative;
+    background-color: color.$color-group-1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-query.mediaQuery(viewport950) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__header {
+    text-align: left;
+  }
+  &__box {
+    padding: 9.6rem 0;
+    width: 130rem;
+    @include media-query.mediaQuery(viewport1300) {
+      width: 100%;
+      padding: 9.6rem 3.2rem;
+    }
+    @include media-query.mediaQuery(viewport400) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
+    margin-top: 8rem;
+    @include media-query.mediaQuery(viewport530) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__image {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+  }
+  &__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+  }
+  &__person-name {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.8rem;
+    color: color.$color-group-3f;
+  }
+  &__gallery-heading {
+    width: 130rem;
+    margin: 0 auto;
+    @include media-query.mediaQuery(viewport1300) {
+      width: 100%;
+      padding: 0 3.2rem;
+    }
+  }
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+    @include media-query.mediaQuery(viewport950) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @include media-query.mediaQuery(viewport900) {
+      gap: 1.2rem;
+    }
+    @include media-query.mediaQuery(viewport720) {
+      gap: 0.5rem;
+    }
+    @include media-query.mediaQuery(viewport550) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include media-query.mediaQuery(viewport520) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include media-query.mediaQuery(viewport480) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    // @include media-query.mediaQuery(viewport380) {
+    //   grid-template-columns: repeat(1, 1fr);
+    // }
+    &-item {
+      overflow: hidden;
+    }
+
+    &-image {
+      display: block;
+      width: 100%;
+      transition: variables.$transition-all-slower;
+      cursor: pointer;
+    }
+    &-image:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__item-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__item-rating {
+    display: flex;
+    flex-direction: column;
+    // font-size: 1.8rem;
+  }
+  &__item-rating-paragraph {
+    font-size: 1.6rem;
+  }
+}

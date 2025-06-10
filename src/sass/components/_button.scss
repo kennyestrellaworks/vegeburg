@@ -1,0 +1,158 @@
+@use "../utilities/color";
+@use "../utilities/media-query";
+@use "../utilities/variables";
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    /* Only necessary for .btn */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    /* Put transition on original "state" */
+    /* transition: background-color 0.3s; */
+    transition: all 0.3s;
+    @include media-query.mediaQuery(viewport550) {
+      padding: 2.4rem 1.6rem;
+    }
+    @include media-query.mediaQuery(viewport500) {
+      padding: 1.4rem 1.6rem;
+    }
+  }
+
+  // Mobile nav starts
+  &__mobile-nav-wrap {
+    display: none;
+    border: none;
+    background: none;
+    @include media-query.mediaQuery(viewport950) {
+      display: block;
+    }
+  }
+  &__mobile-nav {
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 600;
+
+    &--icon {
+      height: 4.8rem;
+      width: 4.8rem;
+      fill: color.$color-group-3a;
+    }
+  }
+  // Mobile nav ends
+
+  &__full {
+    background-color: color.$color-group-1c;
+  }
+  &__full:link,
+  &__full:visited {
+    background-color: color.$color-group-1c;
+    color: color.$color-white;
+  }
+  &__full:hover,
+  &__full:active {
+    background-color: color.$color-group-1b;
+  }
+  &__outline:link,
+  &__outline:visited {
+    background-color: color.$color-white;
+    color: color.$color-group-1a;
+  }
+  &__outline:hover,
+  &__outline:active {
+    background-color: color.$color-group-1f;
+    box-shadow: inset 0 0 0 3px color.$color-group-1a;
+  }
+  &__form {
+    background-color: color.$color-group-1a;
+    color: color.$color-group-1d;
+    padding: 1.2rem;
+    transition: variables.$transition-all-slower;
+    &:hover {
+      background-color: color.$color-white;
+      color: color.$color-group-1a;
+    }
+  }
+
+  &__fullv2 {
+    background-color: color.$color-group-3d;
+    color: color.$color-group-3b;
+  }
+  &__fullv2:hover,
+  &__fullv2:active {
+    background-color: color.$color-group-2d;
+    color: color.$color-white;
+  }
+
+  &__left-right-buttons {
+    background-color: color.$color-group-3h;
+    color: color.$color-group-2b;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: variables.$transition-all-slower;
+    &-width {
+      width: 24rem;
+      @include media-query.mediaQuery(viewport690) {
+        width: 20rem;
+      }
+      @include media-query.mediaQuery(viewport620) {
+        width: 16rem;
+      }
+      @include media-query.mediaQuery(viewport550) {
+        width: 14rem;
+      }
+      @include media-query.mediaQuery(viewport530) {
+        width: 12rem;
+      }
+      @include media-query.mediaQuery(viewport480) {
+        width: 10rem;
+      }
+      @include media-query.mediaQuery(viewport450) {
+        width: 8rem;
+      }
+      @include media-query.mediaQuery(viewport400) {
+        display: none;
+      }
+    }
+    &:disabled {
+      background-color: color.$color-group-3h;
+      cursor: not-allowed;
+      &:hover {
+        background-color: color.$color-group-3h;
+      }
+      & svg {
+        fill: color.$color-group-3g;
+      }
+      &:hover svg {
+        fill: color.$color-group-3g;
+      }
+    }
+    &:hover {
+      background-color: color.$color-group-2a;
+      color: color.$color-white;
+    }
+    &:hover svg {
+      fill: color.$color-white;
+    }
+    & svg {
+      height: 2.4rem;
+      width: 2.4rem;
+      fill: color.$color-group-2b;
+      transition: variables.$transition-all-slower;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@use "../utilities/color";
+@use "../utilities/variables";
+
+.link__text--primary {
+  &:link,
+  &:visited {
+    display: inline-block;
+    color: color.$color-group-2a;
+    text-decoration: none;
+    // border-bottom: 1px solid currentColor;
+    padding-bottom: 0.2rem;
+    transition: variables.$transition-all-slower;
+  }
+  &:hover,
+  &:active {
+    color: color.$color-group-1b;
+    // border-bottom: 1px solid transparent;
+  }
+}

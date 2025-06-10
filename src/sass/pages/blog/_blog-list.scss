@@ -1,0 +1,119 @@
+@use "../../utilities/color";
+@use "../../utilities/variables";
+@use "../../utilities/media-query";
+
+.blog-archive {
+  width: 100%;
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid color.$color-group-3g;
+    border-radius: 4px;
+    @include media-query.mediaQuery(viewport440) {
+      flex-direction: column;
+    }
+  }
+  &__button {
+    font-size: 1.4rem;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    background-color: color.$color-group-3h;
+    color: color.$color-group-3f;
+    cursor: pointer;
+    transition: variables.$transition-all-slowest;
+    &:not(:last-child) {
+      border-right: 1px solid color.$color-group-2c;
+    }
+    &:hover {
+      background-color: color.$color-group-2a;
+      color: color.$color-group-3h;
+    }
+    &.active {
+      background-color: color.$color-group-2a;
+      color: color.$color-group-3h;
+    }
+  }
+}
+
+.blog-list {
+  margin-top: 2rem;
+  &__item {
+    padding: 1rem;
+    border: 1px solid color.$color-group-3e;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  &__date {
+    font-size: 1.4rem;
+  }
+  &__heading {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.4;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    & .article__author {
+      font-size: 1.4rem;
+    }
+    & .article__author-image {
+      width: 1.7rem;
+    }
+    & .article__content-date-icon svg {
+      width: 1.6rem;
+      stroke: color.$color-group-3d;
+    }
+  }
+}
+
+.blog-list-v2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  @include media-query.mediaQuery(viewport670) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  & .article__category {
+    margin-bottom: 1rem;
+  }
+  &__item {
+    padding: 1rem;
+    border: 1px solid color.$color-group-3e;
+  }
+  &__paragraph {
+    margin-top: 2rem;
+  }
+  &__buttons {
+    background-color: color.$color-group-1c;
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: variables.$transition-all-slower;
+    &:hover {
+      background-color: color.$color-group-1a;
+    }
+    &:hover .blog-list-v2__button {
+      color: color.$color-group-3h;
+    }
+  }
+  &__button {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: color.$color-group-1a;
+    border: none;
+    background: transparent;
+  }
+}

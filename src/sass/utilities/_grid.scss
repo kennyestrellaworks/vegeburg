@@ -1,0 +1,48 @@
+@use "media-query";
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  @include media-query.mediaQuery(viewport1200) {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  @include media-query.mediaQuery(viewport550) {
+    row-gap: 4.8rem;
+  }
+  @include media-query.mediaQuery(viewport430) {
+    display: flex;
+    flex-direction: column;
+  }
+  &--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+    @include media-query.mediaQuery(viewport550) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+    @include media-query.mediaQuery(viewport710) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media-query.mediaQuery(viewport550) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+    @include media-query.mediaQuery(viewport710) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media-query.mediaQuery(viewport550) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &--5-cols {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  &--center-v {
+    align-items: center;
+  }
+}

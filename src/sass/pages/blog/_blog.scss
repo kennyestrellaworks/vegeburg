@@ -1,0 +1,311 @@
+@use "../../utilities/color";
+@use "../../utilities/variables";
+@use "../../utilities/media-query";
+
+.blog {
+  background-color: color.$color-group-1d;
+  padding: 8rem 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  &__container {
+    padding-top: 8rem;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    position: relative;
+  }
+  &__content {
+    flex: 1;
+    @include media-query.mediaQuery(viewport880) {
+      width: 100%;
+    }
+  }
+  &__content,
+  &__sidebar {
+    background: white;
+    padding: 2rem;
+  }
+  &__sidebar {
+    width: 30rem;
+    transition: variables.$transition-all-slower;
+    position: relative;
+    @include media-query.mediaQuery(viewport880) {
+      // width: 8rem;
+      position: absolute;
+      right: 0;
+      padding: 0;
+      width: initial;
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+      transition: variables.$transition-all-slower;
+      // background-color: green;
+      overflow: hidden;
+      @include media-query.mediaQuery(viewport880) {
+        width: 0rem;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        background: color.$color-white;
+        padding: 2rem;
+        box-shadow: -4px 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      &-expand {
+        width: 40rem;
+        opacity: 1;
+        @include media-query.mediaQuery(viewport480) {
+          width: 32rem;
+        }
+        @include media-query.mediaQuery(viewport400) {
+          width: 26rem;
+        }
+        @include media-query.mediaQuery(viewport400) {
+          width: 20rem;
+        }
+      }
+    }
+    &-collapse-button {
+      display: none;
+      @include media-query.mediaQuery(viewport880) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background: color.$color-white;
+        padding: 1rem;
+        cursor: pointer;
+        border: none;
+        box-shadow: -4px 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      & svg {
+        width: 4rem;
+        height: 4rem;
+        fill: color.$color-group-3f;
+      }
+    }
+  }
+  &__categories-item {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 2rem;
+  }
+  &__category {
+    text-transform: capitalize;
+    background-color: color.$color-group-3h;
+    color: color.$color-group-3f;
+    transition: variables.$transition-all-slower;
+    cursor: pointer;
+    padding: 0.2rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+    &-clear {
+      text-decoration: underline;
+      cursor: pointer;
+      padding: 0 1rem;
+      transition: variables.$transition-all-slower;
+      color: color.$color-group-3c;
+      &:hover {
+        color: color.$color-group-2a;
+      }
+    }
+    &:hover {
+      background-color: color.$color-group-2b;
+      color: color.$color-group-3h;
+    }
+    &.active {
+      background-color: color.$color-group-2b;
+      color: color.$color-group-3h;
+    }
+  }
+}
+
+.article {
+  &:not(:last-child) {
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #000;
+  }
+  &__category {
+    background-color: color.$color-group-2a;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    &-heading {
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      color: color.$color-group-3h;
+    }
+  }
+  &__categories {
+    @include media-query.mediaQuery(viewport880) {
+      display: none;
+    }
+  }
+  &__content {
+    &-title {
+      font-size: 4rem;
+      line-height: 1.2;
+      padding-bottom: 3rem;
+      padding-top: 1rem;
+      color: color.$color-group-2f;
+    }
+    &-date {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      &-paragraph {
+        color: color.$color-group-3b;
+      }
+    }
+    &-date-icon svg {
+      display: flex;
+      align-items: center;
+      width: 2.4rem;
+      height: 2.4rem;
+      stroke: color.$color-group-3d;
+    }
+    &-label {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+      @include media-query.mediaQuery(viewport550) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+    }
+  }
+  &__paragraph {
+    font-size: 1.8rem;
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+    &-box {
+      margin-top: 3rem;
+    }
+  }
+  &__author {
+    display: flex;
+    color: color.$color-group-3d;
+    align-items: center;
+    &-name {
+      color: color.$color-group-2a;
+    }
+    &-image {
+      border-radius: 50%;
+      width: 2.6rem;
+    }
+  }
+  &__list {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin: 0;
+  }
+  &__olist {
+    padding-left: 2rem;
+    margin: 0;
+  }
+  &__main {
+    margin-top: 3rem;
+    &-image {
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+    &-image-half {
+      width: 50%;
+      margin-bottom: 1rem;
+    }
+    &-image-left,
+    &-image-right {
+      @include media-query.mediaQuery(viewport740) {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        height: 32rem;
+      }
+    }
+    &-image-left {
+      float: left;
+      margin-right: 2rem;
+    }
+    &-image-right {
+      float: right;
+      margin-left: 2rem;
+    }
+    &-image-full {
+      width: 100%;
+      height: 40rem;
+    }
+  }
+  &__left-right-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+    & span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: color.$color-white;
+  border: 1px solid color.$color-group-3e;
+  padding: 1rem;
+  @include media-query.mediaQuery(viewport510) {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  & div:nth-child(1) {
+    @include media-query.mediaQuery(viewport510) {
+      order: 1;
+    }
+  }
+  & div:nth-child(2) {
+    @include media-query.mediaQuery(viewport510) {
+      order: 2;
+    }
+  }
+  &__button {
+    padding: 1rem 3rem;
+    width: 14rem;
+  }
+  &__page-button {
+    padding: 1rem;
+  }
+  &__page-numbers {
+    display: flex;
+    gap: 0.5rem;
+  }
+  &__button,
+  &__page-button {
+    background-color: color.$color-group-2b;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: color.$color-white;
+    transition: variables.$transition-all-slower;
+    &:hover {
+      background-color: color.$color-group-2a;
+    }
+    &:disabled {
+      background-color: color.$color-group-3g;
+      cursor: not-allowed;
+    }
+  }
+}

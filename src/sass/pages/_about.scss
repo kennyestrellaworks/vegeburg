@@ -1,0 +1,59 @@
+@use "../utilities/media-query";
+@use "../utilities/color";
+
+.about-page {
+  background-color: color.$color-group-1d;
+  padding: 8rem 0;
+  &__hero {
+    height: 90vh;
+    width: 100%;
+    padding-top: 9rem;
+    // background-color: green;
+    @include media-query.mediaQuery(viewport800) {
+      height: 100%;
+    }
+    &-owners-picture {
+      width: 100%;
+      @include media-query.mediaQuery(viewport800) {
+        width: 40rem;
+      }
+      @include media-query.mediaQuery(viewport630) {
+        width: 30rem;
+      }
+    }
+    &-container {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      gap: 6rem;
+      // padding: 6rem 0;
+      align-items: center;
+      @include media-query.mediaQuery(viewport800) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &-left,
+    &-right {
+      width: 50%;
+      @include media-query.mediaQuery(viewport800) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    &-right .about-page__paragraph:nth-of-type(1) {
+      margin-bottom: 3rem;
+    }
+  }
+  &__heading {
+    font-size: 5.2rem;
+    color: #333333;
+  }
+  &__paragraph {
+    font-size: 2rem;
+    line-height: 1.6;
+    &-2 {
+      font-size: 1.4rem;
+    }
+  }
+}

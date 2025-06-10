@@ -1,0 +1,94 @@
+@use "../utilities/color";
+@use "../utilities/media-query";
+@use "../utilities/variables";
+
+.navbar {
+  position: relative;
+  @include media-query.mediaQuery(viewport950) {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: variables.$transition-all-slower;
+    z-index: 500;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    &-item .active {
+      color: color.$color-group-1b;
+    }
+    @include media-query.mediaQuery(viewport1200) {
+      gap: 3.2rem;
+    }
+    @include media-query.mediaQuery(viewport950) {
+      flex-direction: column;
+      gap: 4.8rem;
+    }
+    &-link {
+      display: inline-block;
+      text-decoration: none;
+      color: color.$color-group-1b;
+      font-weight: 500;
+      font-size: 1.8rem;
+      transition: all 0.3s;
+    }
+    &-link:hover,
+    &-link.active {
+      color: color.$color-group-2a;
+    }
+  }
+  &__cta:link,
+  &__cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.9rem;
+    color: color.$color-white;
+    background-color: color.$color-group-1c;
+  }
+  &__cta:hover,
+  &__cta:active {
+    background-color: color.$color-group-1b;
+  }
+}
+
+.show-mobile-nav {
+  & .navbar {
+    @include media-query.mediaQuery(viewport950) {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(0);
+    }
+  }
+  & .navbar__list {
+    @include media-query.mediaQuery(viewport950) {
+      flex-direction: column;
+      gap: 4.8rem;
+    }
+  }
+  & .navbar__list-link {
+    @include media-query.mediaQuery(viewport950) {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.sticky .header {
+  background-color: rgba(color.$color-white, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}

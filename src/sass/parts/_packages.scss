@@ -1,0 +1,98 @@
+@use "../utilities/color";
+@use "../utilities/media-query";
+
+.section-packages {
+  background-color: color.$color-white;
+  padding: 10rem 0;
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    & .active {
+      background-color: color.$color-group-2d;
+      color: color.$color-white;
+    }
+  }
+  &__btn {
+    margin-top: 4rem;
+  }
+  &__content {
+    position: relative;
+    width: 100%;
+    &-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6rem;
+      margin-top: 5rem;
+      @include media-query.mediaQuery(viewport1200) {
+        gap: 4rem;
+      }
+      @include media-query.mediaQuery(viewport1020) {
+        gap: 3rem;
+      }
+      @include media-query.mediaQuery(viewport880) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include media-query.mediaQuery(viewport610) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    &-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+      }
+    }
+    &-heading {
+      color: #cf711f;
+      font-weight: 600;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.75;
+      margin-bottom: 3.2rem;
+      @include media-query.mediaQuery(viewport930) {
+        margin-bottom: 1.2rem;
+      }
+    }
+    &-price {
+      font-size: 6.2rem;
+      font-weight: 600;
+      color: #333333;
+      margin-bottom: 1.6rem;
+      & span {
+        font-size: 3rem;
+      }
+    }
+    &-description {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      color: #6f6f6f;
+    }
+    &-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      margin-top: 3rem;
+      & svg {
+        height: 2.4rem;
+        width: 2.4rem;
+        fill: color.$color-group-1c;
+      }
+    }
+    &-list-item {
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      line-height: 1.2;
+    }
+  }
+}
