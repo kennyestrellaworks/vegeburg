@@ -12,7 +12,7 @@ export const blogPosts = [
                       <div class="article__paragraph-box">
                         <img
                           class="article__main-image-full article__main-image"
-                          src="/src/assets/images/{{postImages[0]}}.jpg"
+                          src="/images/{{postImages[0]}}.jpg"
                           alt="Blog image"
                         />
                       </div>
@@ -28,7 +28,7 @@ export const blogPosts = [
                       <div class="article__paragraph-box">
                       <img
                           class="article__main-image-half article__main-image-left article__main-image"
-                          src="/src/assets/images/{{postImages[1]}}.jpg"
+                          src="/images/{{postImages[1]}}.jpg"
                           alt="Blog image"
                         />
                         <p class="article__paragraph">
@@ -52,7 +52,7 @@ export const blogPosts = [
                       <div class="article__paragraph-box">
                         <img
                           class="article__main-image-full article__main-image"
-                          src="/src/assets/images/{{postImages[0]}}.jpg"
+                          src="/images/{{postImages[0]}}.jpg"
                           alt="Blog image"
                         />
                       </div>
@@ -64,7 +64,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
 <img
                           class="article__main-image-half article__main-image-right article__main-image"
-                          src="/src/assets/images/{{postImages[1]}}.jpg"
+                          src="/images/{{postImages[1]}}.jpg"
                           alt="Blog image"
                         />
                         <p class="article__paragraph">Another standout shift in 2025 is the growth of globally inspired vegan burgers. Fusion flavors are making waves, with burger spots serving up patties topped with Korean kimchi slaw, Middle Eastern harissa mayo, and Mexican-style chipotle aioli. These bold, international twists are proving that plant-based burgers can be just as adventurous and indulgent as any meat-based creation. The market for plant-based cheeses has also exploded, allowing vegan burger lovers to enjoy gooey, melty slices of dairy-free cheddar, mozzarella, and pepper jack. Paired with dairy-free sauces, caramelized onions, and crispy fried shallots, these burgers deliver the kind of rich, satisfying experience that was once thought impossible in a fully plant-based meal.
@@ -98,7 +98,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -110,7 +110,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-right article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">What sets vegan burgers apart today is how closely they can replicate the texture and taste of traditional beef patties while introducing unique flavors of their own. Ingredients like pea protein, soy, black beans, mushrooms, and even jackfruit are being used to craft patties that sizzle, char, and satisfy just like their meat-based counterparts. Brands like Beyond Meat and Impossible Foods have led the charge, but many home cooks and restaurants are developing their own signature recipes that showcase local produce and inventive spice blends. Health is another major reason people are making the switch. Vegan burgers typically contain no cholesterol, less saturated fat, and are often packed with fiber and nutrients, depending on the ingredients used. They offer a guilt-free indulgence for those looking to reduce their environmental impact or follow a plant-based diet. With studies linking plant-based eating to lower risks of heart disease, obesity, and certain cancers, it’s no wonder more people are opting for these burgers — whether it’s Meatless Monday or an everyday choice. Perhaps best of all, vegan burgers are incredibly versatile. You can dress them up with avocado, vegan cheese, caramelized onions, or spicy chipotle mayo. Swap out the classic bun for lettuce wraps, gluten-free options, or artisan bread. Whether you’re at a backyard BBQ, a trendy café, or making dinner at home, vegan burgers offer a canvas for creativity and flavor without compromise. The future of burgers is plant-powered, and it’s never tasted better.
@@ -119,7 +119,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[2]}}.jpg"
+        src="/images/{{postImages[2]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Another reason vegan burgers are gaining momentum is their positive impact on the planet. Producing plant-based burgers requires significantly fewer resources than raising livestock — less water, land, and energy, and it generates far lower greenhouse gas emissions. Choosing a vegan burger over a traditional beef one might seem like a small act, but on a global scale, those choices add up and contribute to a more sustainable food system for future generations. For those new to the plant-based burger world, the options can be both exciting and overwhelming. From smoky barbecue flavors to Asian-inspired teriyaki glazes and Mediterranean-infused recipes, there's something for every palate. Some patties aim to mimic the look and taste of beef, while others celebrate vegetables, grains, and legumes in their natural form. Experimenting with different brands and homemade recipes is part of the fun — and you might just discover a new favorite along the way. Ultimately, vegan burgers are more than just a food trend; they're part of a broader shift toward conscious, compassionate eating. They reflect a growing awareness about where our food comes from, how it's made, and the impact it has on our health and environment. Whether you're vegan, flexitarian, or just curious, giving a plant-based burger a spot on your plate is a delicious and meaningful way to be part of that movement.
@@ -141,7 +141,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -182,7 +182,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/hero-image-1.jpg"
+        src="/images/hero-image-1.jpg"
         alt="Blog image"
     />
     </div>
@@ -193,7 +193,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Health benefits also play a major role in the growing demand for plant-based burgers. Most vegan patties are lower in saturated fat and calories compared to their beef counterparts, and they’re typically free from cholesterol. They’re often packed with fiber, plant-based protein, and essential vitamins and minerals. For people looking to reduce their meat consumption, whether for health, ethical, or environmental reasons, vegan burgers offer a satisfying alternative without sacrificing taste or texture. If you’re interested in trying a vegan burger at home, it’s surprisingly simple to create a flavorful, wholesome patty from scratch. Combine mashed beans or lentils with cooked grains like quinoa or bulgur, finely chopped veggies, and your favorite spices. Add breadcrumbs or oats to hold it together, and use ground flaxseed mixed with water as a natural egg replacement. Pan-fry, bake, or grill the patties, and top them with fresh lettuce, ripe tomatoes, creamy avocado, and a zesty vegan sauce for a burger experience that’s every bit as indulgent as the classic — but kinder to your body and the planet.
@@ -214,7 +214,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -225,7 +225,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-right article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">This burger uses black beans and mushrooms as a hearty base, giving it a rich, savory bite with a hint of smokiness. It’s easy to prepare and comes together in under 30 minutes, making it perfect for weeknight dinners, BBQs, or meal prep for the week. Plus, you can easily customize it by adding your favorite spices or swapping in different veggies and legumes.
@@ -276,7 +276,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -288,7 +288,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Besides being delicious, vegan burgers are also a healthier choice for many people. Most contain less saturated fat and zero cholesterol while being packed with plant-based protein, fiber, and important vitamins and minerals. Many are naturally gluten-free and soy-free too, making them a great option for those with dietary restrictions. Plus, choosing plant-based meals more often can help lower your carbon footprint, reduce water usage, and support more sustainable farming practices.
@@ -310,7 +310,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -325,7 +325,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">What’s especially exciting is how vegan burgers are reshaping the food business. Major fast food chains like Burger King, McDonald’s, and KFC have all added plant-based burgers to their menus in recent years, driven by growing consumer demand for healthier and more sustainable options. Sales of plant-based meat alternatives have skyrocketed, with the global plant-based meat market projected to surpass $24 billion by 2030. It’s not just big brands cashing in either — independent restaurants, food trucks, and meal delivery services are also seeing a surge in plant-based burger orders.
@@ -349,7 +349,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -360,7 +360,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Professional athletes are embracing plant-based eating more than ever before. High-profile names in football, basketball, and mixed martial arts have publicly credited plant-based diets with improving recovery times, boosting energy levels, and reducing inflammation. Vegan burgers provide a hearty, satisfying meal option that doesn’t weigh athletes down, offering long-lasting fuel for training sessions and competitions. With customizable ingredients and spice blends, these burgers can be tailored to meet specific dietary goals and flavor preferences.</p>
@@ -383,7 +383,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -394,7 +394,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-right article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Vegan burgers also contribute to reducing deforestation and habitat loss. Large-scale livestock farming is a major driver of deforestation, especially in regions like the Amazon rainforest, where land is cleared to create grazing fields and grow animal feed crops. By choosing plant-based alternatives, consumers help reduce the demand for these destructive practices, preserving biodiversity and protecting vital ecosystems that play a crucial role in regulating the planet’s climate.</p>
@@ -418,7 +418,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -429,7 +429,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Recent studies have shown that replacing just one beef burger with a plant-based option can significantly reduce an individual’s daily carbon footprint. Some estimates suggest that swapping a single beef patty for a vegan one can cut greenhouse gas emissions by the equivalent of driving a car for over 20 kilometers. When multiplied by millions of consumers making the same choice, the impact becomes enormous — reducing demand for beef and slowing methane emissions at a global scale.</p>
@@ -452,7 +452,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -463,7 +463,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Vegan burgers offer a cruelty-free alternative without sacrificing the familiar flavors and textures people love. Thanks to advancements in plant-based food technology, today’s vegan patties can mimic the juiciness, smokiness, and heartiness of traditional beef burgers without the need for animal products. Ingredients like mushrooms, lentils, black beans, and pea protein are transformed into satisfying, delicious patties that appeal to both vegans and meat-eaters alike.</p>
@@ -486,7 +486,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -497,7 +497,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-right article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Beyond their ecological importance, animals are sentient beings capable of feeling pain, fear, and joy. Countless studies have confirmed that animals experience a wide range of emotions, whether it’s a dog wagging its tail, a mother cow caring for her calf, or birds communicating with one another. This understanding makes it clear that animals deserve to be treated with kindness, respect, and dignity — not exploited for profit or convenience.</p>
@@ -520,7 +520,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -531,7 +531,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">It’s also important to talk about health in a fun, positive way. Explain to kids that fruits, vegetables, beans, nuts, and grains are filled with the vitamins and energy their bodies need to grow strong and stay active. Vegan foods can be colorful, exciting, and tasty — from sweet smoothies and crispy veggie nuggets to juicy vegan burgers and dairy-free ice cream. Getting kids involved in the kitchen is a great way to spark their interest and show them how easy and fun plant-based eating can be.</p>
@@ -553,7 +553,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -566,7 +566,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Plant-based eating has been linked to a reduced risk of several chronic illnesses, including type 2 diabetes, certain cancers, and obesity. Whole plant foods are nutrient-dense yet lower in calories, making it easier to maintain a balanced diet without excessive energy intake. Antioxidants found in fruits, vegetables, and legumes protect the body from harmful free radicals, reducing inflammation and cell damage that can lead to disease over time.</p>
@@ -587,7 +587,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -597,7 +597,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">In addition to disease prevention, plant-based diets are rich in fiber — a nutrient many people don’t get enough of. Fiber not only supports healthy digestion but also plays a role in regulating blood sugar, managing cholesterol, and promoting gut health. A thriving gut microbiome has been linked to better immunity, improved mental health, and even longer lifespans. Eating a wide variety of fiber-rich plant foods helps create a healthy, balanced internal environment that keeps the body resilient and strong over time.</p>
@@ -619,7 +619,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -630,7 +630,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Studies have shown that plant-based foods require significantly fewer resources to produce compared to meat. Vegan burgers made from ingredients like peas, lentils, mushrooms, and grains use less water, land, and energy while emitting far fewer greenhouse gases. In fact, switching from a beef burger to a plant-based one can cut associated emissions by up to 90%. When multiplied across millions of consumers, this simple choice has the potential to dramatically lower the food industry’s carbon footprint.</p>
@@ -652,7 +652,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -664,7 +664,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">The shift to plant-based farming can also benefit rural communities and small-scale farmers. As consumer demand grows for vegan ingredients like mushrooms, chickpeas, quinoa, and specialty grains, farmers have new market opportunities to explore. This diversification reduces dependence on livestock and traditional cash crops, creating more resilient and adaptable farming systems. It can also improve food security by encouraging local, sustainable plant food production.</p>
@@ -686,7 +686,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -697,7 +697,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Vegan diets are also packed with complex carbohydrates — the body’s preferred fuel source during high-intensity activities. Whole grains, fruits, vegetables, and legumes provide steady, long-lasting energy without the heaviness often associated with animal-based meals. This makes plant-based eating especially beneficial for endurance athletes who rely on sustained energy for long runs, cycling races, or extended training periods.</p>
@@ -720,7 +720,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -731,7 +731,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Vegan diets are also naturally rich in antioxidants and anti-inflammatory compounds, which help protect the brain from oxidative stress. Chronic inflammation has been associated with mood disorders and cognitive decline. By reducing inflammation through the consumption of plant-based foods, individuals may experience improved mental clarity, emotional resilience, and a greater sense of well-being. Many people report feeling lighter, calmer, and more balanced after switching to a plant-forward way of eating.</p>
@@ -754,7 +754,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -766,7 +766,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Vegan diets also conserve water. Raising animals for food requires far more water than growing crops. For example, producing just one pound of beef can use over a thousand gallons of water. By switching to plant-based meals, people indirectly conserve this vital resource, supporting efforts to manage water more sustainably.</p>
@@ -790,7 +790,7 @@ export const blogPosts = [
     <div class="article__paragraph-box">
     <img
         class="article__main-image-full article__main-image"
-        src="/src/assets/images/{{postImages[0]}}.jpg"
+        src="/images/{{postImages[0]}}.jpg"
         alt="Blog image"
     />
     </div>
@@ -802,7 +802,7 @@ export const blogPosts = [
 <div class="article__paragraph-box">
     <img
         class="article__main-image-half article__main-image-left article__main-image"
-        src="/src/assets/images/{{postImages[1]}}.jpg"
+        src="/images/{{postImages[1]}}.jpg"
         alt="Blog image"
     />
     <p class="article__paragraph">Plants serve multiple purposes aboard spacecraft and space habitats. In addition to providing food, they can purify air, recycle carbon dioxide, and even help with psychological well-being for astronauts in isolated environments. A vegan system that relies on diverse plant cultivation can create a closed-loop life support system essential for long-term missions.</p>
