@@ -151,7 +151,7 @@ export const Blog = () => {
               }`}
             >
               <img
-                src={`/src/assets/images/${post.postImages[0]}.jpg`}
+                src={`/images/${post.postImages[0]}.jpg`}
                 alt={`${post.postImages[0]}`}
                 className="blog-list__image"
               />
