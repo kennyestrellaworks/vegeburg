@@ -34,12 +34,15 @@ export const RootLayout = ({ reference }) => {
 
   // Open and close dropdown nav.
   const openAndCloseDropdownNav = () => {
-    setDropdownNavActive(() => {
-      const clicked = !dropdownNavActive;
-      setDropdownNavActive(clicked);
-      // handleStickyClassName();
-    });
+    setDropdownNavActive((prev) => !prev);
   };
+
+  // const openAndCloseDropdownNav = () => {
+  //   setDropdownNavActive(() => {
+  //     const clicked = !dropdownNavActive;
+  //     setDropdownNavActive(clicked);
+  //   });
+  // };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -94,7 +97,6 @@ export const RootLayout = ({ reference }) => {
                     src={vegeBurgLogo}
                     alt=""
                     className="header__logo-image"
-                    // onClick={handleStickyClassName}
                   />
                 </NavLink>
                 <nav className="navbar">
@@ -103,38 +105,22 @@ export const RootLayout = ({ reference }) => {
                     onClick={openAndCloseDropdownNav}
                   >
                     <li className="navbar__list-item">
-                      <NavLink
-                        to="/"
-                        className="navbar__list-link"
-                        // onClick={handleStickyClassName}
-                      >
+                      <NavLink to="/" className="navbar__list-link">
                         Home
                       </NavLink>
                     </li>
                     <li className="navbar__list-item">
-                      <NavLink
-                        to="about"
-                        className="navbar__list-link"
-                        // onClick={handleStickyClassName}
-                      >
+                      <NavLink to="about" className="navbar__list-link">
                         About
                       </NavLink>
                     </li>
                     <li className="navbar__list-item">
-                      <NavLink
-                        to="blog"
-                        className="navbar__list-link"
-                        // onClick={handleStickyClassName}
-                      >
+                      <NavLink to="blog" className="navbar__list-link">
                         Blog
                       </NavLink>
                     </li>
                     <li className="navbar__list-item">
-                      <NavLink
-                        to="contact"
-                        className="navbar__list-link"
-                        // onClick={handleStickyClassName}
-                      >
+                      <NavLink to="contact" className="navbar__list-link">
                         Contact
                       </NavLink>
                     </li>
@@ -142,7 +128,6 @@ export const RootLayout = ({ reference }) => {
                       <ButtonCTA
                         classes={"navbar__list-link navbar__cta"}
                         ctaName={"Sign up now!"}
-                        // onClick={handleStickyClassName}
                       />
                     </li>
                   </ul>
